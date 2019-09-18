@@ -12,6 +12,8 @@
 		CD85E22F2331B8310048CA7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD85E22D2331B8310048CA7A /* Main.storyboard */; };
 		CD85E2312331B8330048CA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD85E2302331B8330048CA7A /* Assets.xcassets */; };
 		CD85E2342331B8330048CA7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD85E2322331B8330048CA7A /* LaunchScreen.storyboard */; };
+		CD85E23E2331B8CE0048CA7A /* PanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD85E23C2331B8CE0048CA7A /* PanView.swift */; };
+		CD85E23F2331B8CE0048CA7A /* PanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD85E23D2331B8CE0048CA7A /* PanView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CD85E2302331B8330048CA7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD85E2332331B8330048CA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD85E2352331B8330048CA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD85E23C2331B8CE0048CA7A /* PanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanView.swift; sourceTree = "<group>"; };
+		CD85E23D2331B8CE0048CA7A /* PanView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PanView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		CD85E2282331B8310048CA7A /* PanGestureTraining */ = {
 			isa = PBXGroup;
 			children = (
+				CD85E23B2331B8B30048CA7A /* Components */,
 				CD85E2292331B8310048CA7A /* AppDelegate.swift */,
 				CD85E22B2331B8310048CA7A /* ViewController.swift */,
 				CD85E22D2331B8310048CA7A /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				CD85E2352331B8330048CA7A /* Info.plist */,
 			);
 			path = PanGestureTraining;
+			sourceTree = "<group>";
+		};
+		CD85E23B2331B8B30048CA7A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CD85E23C2331B8CE0048CA7A /* PanView.swift */,
+				CD85E23D2331B8CE0048CA7A /* PanView.xib */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD85E23F2331B8CE0048CA7A /* PanView.xib in Resources */,
 				CD85E2342331B8330048CA7A /* LaunchScreen.storyboard in Resources */,
 				CD85E2312331B8330048CA7A /* Assets.xcassets in Resources */,
 				CD85E22F2331B8310048CA7A /* Main.storyboard in Resources */,
@@ -136,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD85E22C2331B8310048CA7A /* ViewController.swift in Sources */,
+				CD85E23E2331B8CE0048CA7A /* PanView.swift in Sources */,
 				CD85E22A2331B8310048CA7A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7SHQ58Y48B;
 				INFOPLIST_FILE = PanGestureTraining/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7SHQ58Y48B;
 				INFOPLIST_FILE = PanGestureTraining/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
